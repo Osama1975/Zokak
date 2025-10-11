@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="ar">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>زقاق التقاعد</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      direction: rtl;
+      background: #f6f7fb;
+      color: #222;
+      scroll-behavior: smooth;
+    }
+
+    /* ===== شريط التنقل ===== */
+    nav {
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      background: #6a3ab2;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      z-index: 1000;
+    }
+
+    nav .logo {
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 15px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffd700;
+    }
+
+    /* ===== قسم البداية ===== */
+    .hero {
+      background: linear-gradient(to bottom, rgba(106,58,178,0.85), rgba(106,58,178,0.9)), url("Screenshot_٢٠٢٥١٠٠٣-٢٢١٥٥٦.jpg") center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 25px 20px 25px;
+    }
+
+    .hero h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      font-weight: bold;
+      color: white;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    /* ===== أقسام الصفحة ===== */
+    section {
+      max-width: 900px;
+      margin: 80px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    }
+
+    section h2 {
+      color: #6a3ab2;
+      border-right: 4px solid #6a3ab2;
+      padding-right: 10px;
+      margin-bottom: 15px;
+    }
+
+    section p {
+      line-height: 1.8;
+      font-size: 16px;
+    }
+
+    /* ===== معرض الصور ===== */
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      margin-top: 15px;
+    }
+
+    .gallery img {
+      width: 200px;
+      height: 380px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      transition: 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    /* ===== نموذج الاتصال ===== */
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    label {
+      font-weight: bold;
+      color: #333;
+    }
+
+    input, textarea, button {
+      font-size: 15px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    button {
+      background: #6a3ab2;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #502e8f;
+    }
+
+    /* ===== تذييل الصفحة ===== */
+    footer {
+      background: #6a3ab2;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+      margin-top: 60px;
+    }
+
+    /* ===== للهواتف ===== */
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 26px; }
+      .hero p { font-size: 15px; }
+      .gallery img { width: 100%; height: auto; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== شريط التنقل ===== -->
+  <nav>
+    <div class="logo">زقاق التقاعد</div>
+    <div>
+      <a href="#about">عن التطبيق</a>
+      <a href="#contact">اتصل بنا</a>
+    </div>
+  </nav>
+
+  <!-- ===== قسم البداية ===== -->
+  <section class="hero">
+    <h1>زقاق التقاعد</h1>
+    <p>هو تطبيق خدمي عراقي يهدف إلى رعاية شريحة المتقاعدين الكرام، وتقديم خدمات مخصصة تلبي احتياجاتهم وتواكب تطلعاتهم بطريقة مبسطة وسلسة</p>
+          <img src="/image/icon.png" height="200" white="200" alt="Logo">
+    
+  </section>
+
+  <!-- ===== قسم عن التطبيق ===== -->
+  <section id="about">
+    <h2>عن التطبيق</h2>
+<p>
+جاءت فكرة التطبيق من الواقع الذي نعيشه، حيث يندر وجود منصات تقنية تهتم بشؤون المتقاعد العراقي، رغم أهميته ودوره الكبير في بناء المجتمع.
+اخترنا اسم "زقاق التقاعد" لما يحمله من رمزية، حيث اعتدنا أن نرى المتقاعدين يجتمعون في أزقة المدن والمناطق الشعبية، يتبادلون الأحاديث والذكريات… ونحن اليوم نوفر لهم هذا الزقاق، ولكن بصيغة رقمية حديثة، آمنة وسهلة الاستخدام.
+</p>
+
+<p>
+ما يقدمه التطبيق حالياً:
+<ul>
+  <li>خدمة احتساب الراتب التقاعدي بدقة، وفقاً للضوابط الرسمية المعتمدة.</li>
+  <li>قراءة القوانين والتعليمات المرتبطة بالتقاعد، بصيغة مبسطة وسهلة الفهم.</li>
+  <li>متابعة آخر الأخبار والمستجدات المهمة التي تخص فئة المتقاعدين من مختلف المصادر الرسمية.</li>
+</ul>
+</p>
+
+<p>
+نحن نعمل باستمرار على تطوير التطبيق وإضافة خدمات جديدة تواكب حاجات المتقاعدين، ونسعى لأن يكون "زقاق التقاعد" مساحة تفاعلية حقيقية، فيها الفائدة والدعم والاهتمام.
+ملاحظاتكم ومقترحاتكم تهمنا كثيراً، ونسعد بتفاعلكم معنا في كل خطوة من خطوات التطوير.
+</p>
+
+  </section>
+
+  <!-- ===== قسم الصور ===== -->
+  <section id="gallery">
+    <h2>صور من التطبيق</h2>
+    <div class="gallery">
+        <img src="/image/news.jpg"  alt="Logo">
+      <img src="/image/menu.jpg" alt="Logo">
+       <img src="/image/law.jpg"  alt="Logo">
+         <img src="/image/link.jpg" alt="Logo">
+      <img src="/image/calc.jpg" alt="Logo">
+       <img src="/image/contact.jpg"  alt="Logo">
+    </div>
+  </section>
+
+  <!-- ===== قسم الاتصال ===== -->
+  <section id="contact">
+    <h2>اتصل بنا</h2>
+    <p>يسعدنا تواصلك معنا لأي استفسار أو ملاحظة.</p>
+
+    <form action="https://formsubmit.co/osama.mohammed75@gmail.com" method="POST">
+      <!-- <input type="hidden" name="_captcha" value="false"> -->
+    <!-- <input type="hidden" name="_next" value="thanks.html"> -->
+
+      <label>الاسم الكامل</label>
+      <input type="text" name="name" placeholder="اكتب اسمك" required>
+
+      <label>البريد الإلكتروني</label>
+      <input type="email" name="email" placeholder="you@example.com" required>
+
+      <label>الموضوع</label>
+      <input type="text" name="subject" placeholder="عنوان الرسالة" required>
+
+      <label>الرسالة</label>
+      <textarea name="message" placeholder="اكتب رسالتك هنا..." required></textarea>
+
+
+      <button type="submit">إرسال الرسالة</button>
+    </form>
+  </section>
+
+  <!-- ===== التذييل ===== -->
+  <footer>
+    &copy; <script>document.write(new Date().getFullYear())</script> زقاق التقاعد — جميع الحقوق محفوظة.
+  </footer>
+
+</body>
+</html>
